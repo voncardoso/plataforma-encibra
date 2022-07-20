@@ -1,5 +1,13 @@
+import { Sidbar } from "../components/Sidbar";
+import { Container } from "./Dashboard_style";
+
 export function Dashboard (){
     return(
-        <h1>Dasboard</h1>
+        <Container>
+            <Sidbar />
+            <div>
+                <h1>Dashboard</h1>
+            </div>
+        </Container>
     )
 }
