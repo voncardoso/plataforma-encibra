@@ -9,6 +9,7 @@ export const Menu = styled.aside`
     grid-template-areas: 
     "logo"
     "menu"
+    "configuracao"
     "avatar";
     padding: 0px 10px 0px 10px;
 
@@ -22,8 +23,8 @@ export const Menu = styled.aside`
         ul{
             padding: 0px 10px 0px 10px;
             grid-area: menu;
-            height: 80vh;
-
+            height: 76vh;
+            
             li{
                 display: flex;
                 font-size: 1.125rem;
@@ -46,10 +47,56 @@ export const Menu = styled.aside`
                 color: var(--gold-400);
             }
         }
-        div{
+
+        > a{
+            display: flex;
+            font-size: 1.125rem;
+            padding: 10px 12px 10px 12px;
+            border-radius: 5px;
+            color: var(--gray-400);
+            font-weight: 400;
+            cursor: pointer;
+            grid-area: configuracao;
+            height: 5vh;
+            align-self: flex-end;
+            margin-bottom: 10px;
+            svg{
+                margin-right: 5px;
+            }
+            p{
+                align-self: center;
+            }
+        }
+
+        > a:hover{
+            background: var(--gold-200);
+                color: var(--gold-400);
+        }
+
+        .avatar{
             padding: 0px 10px 0px 10px;
             grid-area: avatar;
-            height: 10vh;
+            height: 6vh;
+            border: 1px solid var(--gray-400);
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            color: var(--gray-400);
+            cursor: pointer;
+            
+            img{
+                height: 40px;
+                width: 40px;
+                margin-right: 10px;
+            }
+            strong{
+                font-size: 14px;
+            }
+
+            p{
+                margin-top: 2px;
+                font-size: 12px;
+            }
         }
    }
 

@@ -1,12 +1,12 @@
 import LogoSidbar from '../assets/Logo-sidbar.svg'
-import iconeContarto from '../assets/icone-contrato.svg'
-import { Notebook, Truck } from "phosphor-react";
+import avatar from '../assets/Ellipse.png'
+import { Notebook, Truck, Gear } from "phosphor-react";
 import { Menu } from "./Sidbar_style";
 
 export function Sidbar(){
     return(
         <Menu>
-            <div className='infoMenu'>
+            <section className='infoMenu'>
                 <img src={LogoSidbar} alt="" />
                 <ul>
                     <li>
@@ -15,14 +15,22 @@ export function Sidbar(){
                         <p>Contratos</p>
                     </li>
                     <li>
-                        <Truck size={26}/>
+                        <Truck size={24}/>
                        <p>Rodovias</p>
                     </li>
                 </ul>
+                <a>
+                    <Gear size={24}/>
+                    <p>Configuração</p>
+                </a>
                 <div className='avatar'>
-                    avatar
+                   <img src={avatar} alt="" />
+                   <div>
+                        <strong>Rafael Santos</strong>
+                        <p>Engenheiro</p>
+                   </div>
                 </div>
-            </div>
+            </section>
         </Menu>
     )
 }
