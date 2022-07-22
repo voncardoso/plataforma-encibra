@@ -49,9 +49,11 @@ export const Menu = styled.aside`
         }
 
         > a{
+            max-width: 160px;
+            width: 100%;
             display: flex;
             font-size: 1.125rem;
-            padding: 10px 12px 10px 12px;
+            //padding: 10px 12px 10px 12px;
             border-radius: 5px;
             color: var(--gray-400);
             font-weight: 400;
@@ -60,8 +62,12 @@ export const Menu = styled.aside`
             height: 5vh;
             align-self: flex-end;
             margin-bottom: 10px;
+            margin-left: 10px;
+            padding-left: 5px;
             svg{
                 margin-right: 5px;
+                align-self: center;
+                
             }
             p{
                 align-self: center;
@@ -70,7 +76,7 @@ export const Menu = styled.aside`
 
         > a:hover{
             background: var(--gold-200);
-                color: var(--gold-400);
+            color: var(--gold-400);
         }
 
         .avatar{
@@ -83,7 +89,7 @@ export const Menu = styled.aside`
             border-radius: 10px;
             color: var(--gray-400);
             cursor: pointer;
-            
+
             img{
                 height: 40px;
                 width: 40px;
