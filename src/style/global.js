@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   :root{
@@ -39,4 +39,10 @@ export const GlobalStyle = createGlobalStyle`
         cursor: pointer;
     }
 
+    .grid-global{
+        display: grid;
+        grid-template-columns: minmax(100px, 200px) 1fr;
+        height: 100vh;
+        width: 100vw;
+    }
 `;
