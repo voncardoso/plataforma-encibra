@@ -1,4 +1,4 @@
-import BackgoundImg from '../../assets/Background-login.png';
+import BackgoundImg from '../assets/Background-login.png';
 import styled from "styled-components";
 
 export const Container = styled.section`
