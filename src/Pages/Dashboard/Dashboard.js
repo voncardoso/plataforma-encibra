@@ -4,7 +4,7 @@ import { Container } from "./Dashboard_style";
 
 export function Dashboard() {
   return (
-    <Container>
+    <Container className="grid-global">
       <Sidbar />
       <Table
         d1="Rodivia"
