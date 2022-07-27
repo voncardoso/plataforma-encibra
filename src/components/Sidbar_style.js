@@ -29,6 +29,7 @@ export const Menu = styled.aside`
         display: flex;
         font-size: 1.125rem;
         padding: 10px 5px 10px 5px;
+        margin-bottom: 4px;
         border-radius: 5px;
         color: var(--gray-400);
         font-weight: 400;
