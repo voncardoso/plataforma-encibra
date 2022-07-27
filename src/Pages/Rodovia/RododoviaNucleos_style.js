@@ -46,7 +46,7 @@ export const Container = styled.section`
 `;
 
 export const Grafico = styled.div`
-  padding: 20px;
+  padding: 20px 30px;
   > div {
     background: var(--white);
     padding: 10px;
@@ -59,23 +59,29 @@ export const Grafico = styled.div`
 `;
 
 export const Nucleos = styled.div`
+  margin: 0 auto;
   ul {
     overflow-x: scroll;
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 10px 20px 0px 20px;
-    width: 87vw;
+    padding: 10px 0px 0px 0px;
+    width: 85vw;
     margin: 0 auto;
+    // margin-bottom: 20px;
     li {
       box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 25%);
-      padding: 30px 40px;
+      padding: 30px 55px;
       background: var(--white);
       border-radius: 10px;
       border-bottom: 5px solid red;
       text-align: center;
       color: var(--gray-400);
       cursor: pointer;
+
+      h1 {
+        font-size: 1.25rem;
+      }
 
       h2 {
         margin-top: 10px;
@@ -85,7 +91,13 @@ export const Nucleos = styled.div`
       div {
         margin-top: 10px;
         display: flex;
+        justify-content: space-between;
         font-size: 0.875;
+
+        p {
+          max-width: 70px;
+          margin-left: 10px;
+        }
       }
     }
   }
